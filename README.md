@@ -25,7 +25,18 @@ npm install -g @aws-amplify/cli
 npm install -g @go-task/cli
 
 # Get Identity
+export AWS_ACCESS_KEY_ID=
+export AWS_SECRET_ACCESS_KEY=
+export AWS_DEFAULT_REGION=
 aws sts get-caller-identity
 
 # Auto prompt featur
 export AWS_CLI_AUTO_PROMPT=on-partial
+
+
+# bash sripts
+whereis bash 
+#! /usr/bin/env bash (on your file)
+# change permission to make it executable
+chmod u+x s3/bash-scripts/* 
+ls -la s3/bash-scripts
